@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.7;
+    color: #6a6a6a;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700;
+    color: #323232;
+}
+
+a {
+    color: #323232;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #D60F0F;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding: 120px 0;
+}
+
+/* NavBar */
+
+.navbar {
+    background-color: white;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
+  }
+  
+  .navbar-nav .nav-link {
+    font-weight: 500;
+    color:black;
+  }
+  
+  .navbar-nav .nav-link.active {
+    color:rgb(214, 15, 15);
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color:#d60f0f;
+  }
+  
+  .navbar-nav .dropdown-item:hover{
+    color: #d60f0f;
+  }
+  
+  .dropdown-item{
+    font-weight:100;
+    color:rgb(122, 122, 122);
+  }
+
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/images/Hero-Digital.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Button */
+.btn {
+    font-weight: 500;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+  }
+  
+  .btn-primary {
+    background-color: #D60F0F;
+  }
+  
+  .btn-primary:hover {
+    background-color: #000000;
+    transform: scale(1.1);
+  }
+
+  /* Intro Section */
+.digital-card{
+  background-color: #000000;
+  width: 400px;
+  height: 400px;
+  float: right;
+  margin-left: 60px;
+  margin-bottom: 40px;
+  border-radius: 50px;
+}
+
+.digital-card h3{
+  color: white;
+  font-weight:700;
+  font-size: 35px;
+  text-align: center;
+  padding-top: 70px;
+}
+
+.digital-card h2{
+  color: #b9b9b9;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.digital-card p{
+  color: rgb(170, 170, 170);
+  text-align: center;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 10px;
+}
+
+.intro-content{
+  margin: 100px auto;
+  width: 85%;
+}
+
+.text-box h2{
+  font-weight: bold;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.text-box p{
+  font-size: 16px;
+}
+
+/* Digital Marketing Packages */
+
+.dmpackages h2{
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+
+.dmpackages{
+  background: white;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.dmpackages .box-container{
+  max-width: 1200px;
+  margin:0 auto;
+  padding:20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap:30px;
+}
+
+.dmpackages .box-container .box{
+  background: #fff;
+  box-shadow: 0 10px 15px rgba(0,0,0,.3);
+}
+
+.dmpackages .box-container .box:nth-child(2){
+  border:0px solid #000;
+}
+
+.dmpackages .box-container .box:nth-child(2) .btn:hover{
+  background: #444;
+}
+
+.dmpackages .box-container .box h3{
+  font-size: 25px;
+  padding:17px 0;
+  color:#444;
+}
+
+.dmpackages .box-container .box .price{
+  color:#fff;
+  background: rgb(0, 0, 0);
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+.price-fav{
+  color:#fff;
+  background: #D60F0F;
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+.dmpackages .box-container .box .list{
+  margin:20px 0;
+}
+
+.dmpackages .box-container .box .list p{
+  
+  font-size: 17px;
+  color:#666;
+}
+
+@media (max-width:450px){
+  .dmpackages .box-container{
+    grid-template-columns: 1fr;
+  }
+}
+
+  /* Tiktok Plan */
+  .image-section{
+    background-color: #000000;
+    width: 400px;
+    height: 400px;
+    float: left;
+    margin-right: 60px;
+    margin-bottom: 40px;
+    border-radius: 50px;
+  }
+  
+  .tiktok-plan-content{
+    margin: 100px auto;
+    width: 85%;
+  }
+  
+  .text-box-two h2{
+    font-weight: bold;
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+  
+  .text-box-two p{
+    font-size: 16px;
+  }
+
+
+/* Footer */
+footer ul {
+  list-style: none;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-top {
+  padding-top: 120px;
+  padding-bottom: 30px;
+}
+
+.footer-bottom {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
